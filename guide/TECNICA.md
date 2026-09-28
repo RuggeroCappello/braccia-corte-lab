@@ -11,7 +11,7 @@
 | `render.js` | Disegna ciò che vedi, compresi titolo e testi sul Canvas |
 | `main.js` | Legge tastiera, gestisce tempo, pausa e suoni |
 | `test.mjs` | Prove automatiche delle regole |
-| `AGENTS.md` | Indicazioni didattiche per gli assistenti IA |
+| `AGENTS.md` | Indicazioni per gli assistenti IA |
 | `opencode.json` | Permessi iniziali per OpenCode; nessuna chiave inclusa |
 
 Il Canvas è la superficie su cui il codice disegna il gioco. La simulazione usa 60 piccoli aggiornamenti al secondo. Non ci sono librerie, immagini scaricate o un server necessari a giocare. `assets/anteprima.png` serve soltanto alla README.
@@ -24,9 +24,9 @@ Cambia una cella alla volta senza cambiare la lunghezza della riga. Se vuoi aggi
 
 ## Eseguire le prove automatiche
 
-Serve **Node.js**, un programma che esegue JavaScript fuori dal browser. Usa la versione predisposta dal docente, oppure il download LTS dal [sito ufficiale](https://nodejs.org/). Non serve installare pacchetti del progetto.
+Serve **Node.js**, un programma che esegue JavaScript fuori dal browser. Se ti interessa provare i test, trovi il download LTS sul [sito ufficiale](https://nodejs.org/). Non serve installare pacchetti del progetto.
 
-Apri un terminale nella cartella del gioco (vedi [la guida OpenCode](03-opencode-zen.md#solo-se-il-docente-ha-scelto-il-terminale)) e scrivi, una riga per volta:
+Apri un terminale nella cartella del gioco (vedi [la guida OpenCode](03-opencode-zen.md#se-usi-la-versione-nel-terminale)) e scrivi, una riga per volta:
 
 ```sh
 node --version
@@ -39,6 +39,6 @@ Se un test fallisce, annota il nome e il messaggio: può avere scoperto un probl
 
 ## Cosa sappiamo, e cosa no
 
-Le prove iniziali coprono salto, varchi, checkpoint, raccolta, nemici, scatto, boss e una partita completa automatica. Un bot che reagisce immediatamente vince in 66,3 secondi: questo non misura il tempo di uno studente. Le prove non coprono tutte le combinazioni di input, ogni browser, la chiarezza dei testi o la corrispondenza perfetta fra grafica e collisioni.
+Le prove iniziali coprono salto, varchi, checkpoint, raccolta, nemici, scatto, boss e una partita completa automatica. Un bot che reagisce immediatamente vince in 66,3 secondi: questo non misura il tempo di una persona che lo prova per la prima volta. Le prove non coprono tutte le combinazioni di input, ogni browser, la chiarezza dei testi o la corrispondenza perfetta fra grafica e collisioni.
 
-Il codice viene distribuito invariato rispetto alla versione di partenza del laboratorio. Non sono stati introdotti bug artificiali e non sono state svolte le indagini degli studenti.
+Il gioco è quello nato durante l’incontro: nel preparare queste guide non sono stati aggiunti guasti artificiali né corretti i bug rimasti da esplorare.

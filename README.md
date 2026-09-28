@@ -1,78 +1,49 @@
-# Braccia Corte: un videogioco, un laboratorio sull’IA
+# Le avventure di Braccia Corte
 
-**Non serve saper programmare per cominciare.** Ti servono un computer con tastiera, un browser (Chrome, Edge, Firefox o Safari) e un po’ di curiosità.
+Questo è il gioco nato dalle vostre idee durante il nostro incontro. Ve lo lascio qui: potete giocarci, smontarlo, cambiare quello che non vi piace e farne qualcosa di vostro.
 
-Questo gioco è nato dalle idee di una classe ed è stato costruito con l’aiuto dell’intelligenza artificiale. Ora tocca a voi: giocatelo, cercate ciò che non funziona e provate a migliorarlo. L’obiettivo è **capire e verificare**, non ottenere più codice possibile.
+È stato costruito con l’aiuto dell’IA, e qualche cosa da sistemare c’è. Se trovate un bug, può essere un buon punto da cui partire. Oppure aggiungete una piattaforma, cambiate una battuta, inventate un nemico. Scegliete voi.
 
-![La schermata iniziale del gioco](assets/anteprima.png)
+![Le avventure di Braccia Corte](assets/anteprima.png)
 
-## 1. Scarica e gioca — circa 5 minuti
+## Voglio giocarci
 
-1. **[Scarica il gioco in formato ZIP](https://github.com/RuggeroCappello/braccia-corte-lab/archive/refs/heads/main.zip)**. Uno ZIP è una cartella compressa, come una valigia chiusa. Non serve un account GitHub.
-2. Apri la cartella **Download** del computer e cerca `braccia-corte-lab-main.zip`.
-3. **Windows:** tasto destro sullo ZIP → **Estrai tutto** → **Estrai**. **Mac:** doppio clic sullo ZIP.
-4. Apri la cartella estratta, poi entra fino a vedere `index.html`, `game.js` e gli altri file insieme. **Non giocare direttamente dentro lo ZIP.**
-5. Fai doppio clic su **`index.html`**. Se si apre come testo: tasto destro → **Apri con** → il tuo browser.
-6. Premi **Invio** per partire. Tieni tutti i file nella stessa cartella: sono i pezzi dello stesso gioco.
+1. **[Scarica lo ZIP](https://github.com/RuggeroCappello/braccia-corte-lab/archive/refs/heads/main.zip)**. Non serve un account GitHub.
+2. Estrailo: su **Windows**, tasto destro → **Estrai tutto**; su **Mac**, doppio clic sullo ZIP.
+3. Apri la cartella estratta e fai doppio clic su **`index.html`**. Se si apre come testo, usa **Apri con → il tuo browser**.
 
-**Risultato atteso:** vedi “Le avventure di Braccia Corte” e puoi muovere il personaggio. Il gioco funziona anche senza Internet. Internet serve invece per parlare con le IA.
+Tieni i file insieme nella cartella. Il gioco funziona anche offline.
 
-| Tasto | Cosa fa |
+| Tasto | Azione |
 | --- | --- |
-| Frecce ← → oppure A / D | Muove il personaggio |
-| Spazio, W oppure ↑ | Salta; tieni premuto per saltare più in alto |
-| Shift | Corre |
-| E | Scatto Tirchio: supera gli abbonamenti, ferma Libo, respinge i cocchi |
-| Esc | Mette in pausa o riprende |
+| ← → oppure A / D | Muoviti |
+| Spazio | Salta: tenendolo premuto salti più in alto |
+| Shift | Corri |
+| E | Scatto Tirchio |
+| Esc | Pausa |
 | M / F | Audio / schermo intero |
-| H / I | Mostra le zone di collisione / invincibilità per fare prove |
-| 1 / 2 / 3 | Va alle tre sezioni per riprovare un punto senza rifare tutto |
 
-Con H, I o 1/2/3 compare **DEBUG**: significa “strumenti per fare prove”.
+Per esplorare più comodamente: **1/2/3** ti portano alle tre sezioni, **I** ti rende invincibile, **H** mostra i rettangoli usati per le collisioni. Compare la scritta DEBUG: sono strumenti per fare prove.
 
-## 2. Fatti una copia — 1 minuto
+## Voglio cambiarlo, ma non so programmare
 
-Chiudi il gioco. Duplica **l’intera cartella estratta** e chiama la copia `braccia-corte-esperimenti`. Conserva l’originale. Da ora apri il gioco e modifica i file **solo nella copia esperimenti**.
+Va benissimo. Fai una **copia della cartella** e sperimenta su quella: l’originale resta sempre lì.
 
-## 3. La tua prima missione — circa 15 minuti
+Un primo tentativo semplice: cambia una scritta. Poi prova qualcosa che ti incuriosisce. Non devi capire tutto il gioco prima di toccarlo.
 
-1. Gioca per qualche minuto **prima di chiedere aiuto all’IA**.
-2. Scegli una sola cosa strana. Riesci a farla succedere di nuovo?
-3. Compila [SCHEDA-BUG.md](SCHEDA-BUG.md): cosa hai premuto, cosa ti aspettavi, cosa è successo.
-4. Segui [Trova e verifica un bug](guide/01-indagine.md). Poi scegli una delle due strade sotto.
+- **[Da dove comincio?](guide/00-primi-passi.md)** — aprire un file, cambiare una scritta, vedere il risultato.
+- **[Mi faccio aiutare da ChatGPT](guide/02-chatgpt.md)** — per capire il codice e farsi suggerire una modifica.
+- **[Uso OpenCode + Zen](guide/03-opencode-zen.md)** — per lavorare direttamente sulla cartella del gioco.
+- **[Ho trovato qualcosa che non va](guide/01-indagine.md)** — qualche idea per capire un bug.
 
-**Non sai da dove iniziare?** Nella guida trovi piccole indagini, senza soluzioni. Puoi anche documentare un problema senza riuscire a correggerlo: è già un lavoro utile.
+ChatGPT e OpenCode sono due possibilità: non servono entrambi, e puoi anche fare tutto senza IA. Il gioco è offline; per usare questi servizi serve Internet.
 
-## 4. Scegli come farti aiutare
+## Un consiglio sull’IA
 
-| La tua situazione | Inizia qui |
-| --- | --- |
-| Non hai mai aperto un file di codice | [ChatGPT, un passo alla volta](guide/02-chatgpt.md) |
-| Hai OpenCode sul computer o il docente ti aiuta a installarlo | [OpenCode + Zen](guide/03-opencode-zen.md) |
-| Non sai cosa sono file, editor o terminale | [Le parole e gli strumenti di base](guide/00-primi-passi.md) |
-| Il gioco non si apre o una modifica non si vede | [Se qualcosa si blocca](guide/05-aiuto.md) |
+È utilissima per partire, ma può sbagliare con grande sicurezza. Chiedile una modifica piccola, provala nel gioco e raccontale cosa succede davvero. “Ho risolto” scritto in chat non basta: il bello è vedere se funziona.
 
-ChatGPT può aiutarti a ragionare sul materiale che gli mostri. OpenCode può leggere e modificare i file del progetto che apri. **Zen è un servizio di modelli per OpenCode, non un altro editor.** Non occorre usarli entrambi. Usa gli account e gli strumenti concordati con il docente; se non ne hai accesso, lavora in coppia o continua l’indagine senza IA.
+## Se ti va di condividere
 
-## 5. Quando puoi dire “ho finito”?
+Puoi passare la tua versione a un amico o proporre una modifica qui su GitHub. [Ecco come](guide/04-condividi.md). Anche segnalare un bug è utile.
 
-- [ ] Un’altra persona riesce a riprodurre il problema dalle mie istruzioni.
-- [ ] So dire con parole mie cosa penso lo causasse.
-- [ ] Ho conservato la versione precedente.
-- [ ] Ho cambiato una cosa per volta e rifatto la stessa prova.
-- [ ] Ho controllato anche un’altra parte del gioco.
-- [ ] Ho scritto come mi ha aiutato l’IA e dove l’ho dovuta correggere.
-
-Poi segui [Come consegnare](guide/04-consegna.md). **Non devi pubblicare nulla per forza:** puoi consegnare la cartella al docente. GitHub è un percorso facoltativo.
-
-## Una cosa importante sui test
-
-Il progetto contiene 23 controlli automatici iniziali. “Tutti verdi” significa soltanto che **quelle prove** sono riuscite. Un difetto visivo, un comando poco chiaro o una situazione non prevista possono esserci lo stesso. Le affermazioni dell’IA vanno messe alla prova proprio come il gioco.
-
-I bug osservati in classe restano da indagare: questa distribuzione conserva il codice del gioco e non aggiunge guasti artificiali né correzioni agli esercizi.
-
-## Per il docente e per chi vuole approfondire
-
-[Guida docente](guide/DOCENTE.md) · [Mappa dei file e test](guide/TECNICA.md) · [Fonti e versioni degli strumenti](guide/FONTI.md)
-
-I personaggi e le situazioni sono caricature di fantasia. Il laboratorio usa solo grafica disegnata dal codice e suoni sintetici. Per questa attività puoi scaricare il progetto e modificare la tua copia.
+[Qualcosa si è bloccato?](guide/05-aiuto.md) · [Come è fatto il gioco](guide/TECNICA.md) · [Link agli strumenti](guide/FONTI.md)

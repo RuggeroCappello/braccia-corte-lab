@@ -4,7 +4,7 @@ title: "[Indagine] "
 body:
   - type: markdown
     attributes:
-      value: "Questa segnalazione sarà pubblica. Usa un codice gruppo, non nomi, dati personali o chiavi."
+      value: "Raccontaci cosa succede. La segnalazione è pubblica: tieni fuori dati personali e chiavi API."
   - type: textarea
     id: steps
     attributes:
@@ -25,7 +25,7 @@ body:
     id: observed
     attributes:
       label: Che cosa hai osservato?
-      description: "Quante volte su tre prove? Computer/browser se li conosci."
+      description: "Succede sempre o solo a volte? Se li conosci, indica computer e browser."
     validations:
       required: true
   - type: textarea

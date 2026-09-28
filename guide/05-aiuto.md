@@ -11,7 +11,7 @@
 | Il personaggio lampeggia dopo una morte | Può essere la breve protezione prevista dal gioco. Aspetta e osserva: non chiamarlo subito bug. |
 | Ho salvato ma non cambia nulla | Ricarica il browser; controlla che stia aprendo la stessa cartella che modifichi. |
 | Il file ora si chiama `game.js.txt` | L’estensione è cambiata. Riprendi il file originale e salvalo con un editor di codice. |
-| OpenCode o ChatGPT chiede un pagamento / ha finito il credito | Non acquistare per tentativi. Scrivi dove sei arrivato e usa il percorso senza IA o chiedi al docente. |
+| OpenCode o ChatGPT chiede un pagamento / ha finito il credito | Puoi fermarti o continuare senza IA. Controlla i costi prima di acquistare credito. |
 | OpenCode vuole modificare molti file | Rifiuta e chiedi una modifica minima, spiegata prima. |
 | `node` o `opencode` “non è riconosciuto” | Quel programma non è installato o il terminale non lo trova. Il gioco non ne ha bisogno per aprirsi. |
 | L’IA dice “risolto”, ma il problema resta | Riporta gli stessi passi, risultato atteso e risultato reale. “Risolto” non è una prova. |

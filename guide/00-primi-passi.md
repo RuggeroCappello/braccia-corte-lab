@@ -1,48 +1,28 @@
-# Prima volta con file e codice?
+# La prima modifica
 
-[Torna alla pagina iniziale](../README.md)
+[Torna al gioco](../README.md)
 
-## Sei parole, senza darle per scontate
+Per giocare apri `index.html` nel browser. Per cambiare il gioco, invece, apri i file con un **editor di codice**, per esempio [Visual Studio Code](https://code.visualstudio.com/). Le guide che stai leggendo si possono leggere direttamente su GitHub: non devi installare nulla per aprirle.
 
-| Parola | Significa |
-| --- | --- |
-| File | Un documento del computer. `game.js` è un file. |
-| Cartella | Un contenitore di file. In questo gioco i file devono stare insieme. |
-| Browser | Il programma per navigare e giocare: per esempio Chrome o Edge. |
-| Repository, o repo | La cartella del progetto su GitHub, con la storia delle modifiche. |
-| Bug | Un comportamento diverso da quello previsto. Non tutto ciò che non ci piace è un bug. |
-| Prompt | Il messaggio con cui chiedi qualcosa a un’IA. |
+## Prova a cambiare una scritta
 
-Un **editor** è un programma per modificare testo e codice. Un **terminale** è una finestra in cui scrivi comandi al computer. Non serve il terminale per giocare o iniziare l’indagine.
-
-## Aprire il gioco e aprire il codice sono due azioni diverse
-
-- Per **giocare**, apri `index.html` nel browser.
-- Per **leggere o cambiare il codice**, apri un file `.js` con un editor, per esempio Visual Studio Code, se già disponibile. Se manca, usa l’editor indicato dal docente; il sito ufficiale di VS Code è [code.visualstudio.com](https://code.visualstudio.com/).
-- Non aprire un `.js` con doppio clic pensando di modificarlo: usa **tasto destro → Apri con → editor**.
-- Non usare Word, Pages o un documento online per salvare i file del gioco: possono cambiare il formato.
-
-## Il ciclo che userai sempre
-
-1. Apri la tua cartella `braccia-corte-esperimenti` nell’editor.
-2. Apri il file indicato dalla tua indagine.
-3. Modifica soltanto la parte che hai capito.
+1. Duplica la cartella del gioco e chiama la copia come vuoi.
+2. Apri la copia nell’editor e seleziona `index.html`.
+3. Cerca `GENOVA, ZERO ABBONAMENTI.` e sostituiscilo con una tua frase.
 4. Salva: **Ctrl+S** su Windows, **Cmd+S** su Mac.
-5. Torna al browser e ricarica: **Ctrl+R** su Windows, **Cmd+R** su Mac.
-6. Il gioco riparte: rifai la prova, usando 1/2/3 se ti serve.
+5. Apri `index.html` di quella stessa copia nel browser. Se era già aperto, ricarica con **Ctrl+R** o **Cmd+R**.
 
-Il browser non “sa” automaticamente che hai cambiato un file: devi salvarlo e ricaricare. Controlla di avere aperto il gioco dalla stessa cartella che stai modificando.
+La scritta in basso dovrebbe essere cambiata. È tutto qui il giro: **modifichi, salvi, ricarichi, provi**.
 
-## Se vuoi vedere i nomi completi
+Se non vedi differenze, controlla di non avere aperto nel browser la cartella originale. Se qualcosa si rompe, hai sempre la copia buona.
 
-Windows: in Esplora file cerca **Visualizza → Mostra → Estensioni nomi file**; nelle versioni meno recenti c’è la casella “Estensioni nomi file” nella scheda Visualizza.
+## Le poche parole che incontrerai
 
-Mac: **Finder → Impostazioni → Avanzate → Mostra tutte le estensioni dei nomi file**.
+- **File:** un documento, come `game.js`.
+- **Browser:** il programma in cui giochi, per esempio Chrome, Edge o Safari.
+- **Editor:** il programma in cui modifichi il codice. Usa questo, non Word o Pages.
+- **Repository o repo:** il progetto su GitHub, con la storia delle modifiche.
+- **Prompt:** quello che scrivi all’IA.
+- **Bug:** qualcosa che non si comporta come dovrebbe.
 
-`game.js` e `game.js.txt` non sono lo stesso tipo di file. Non cambiare l’estensione. Se stai salvando un file esistente, usa Salva, non Salva con nome.
-
-## Primo esperimento, solo per prendere confidenza
-
-Apri `index.html` nell’editor. Cerca il testo `GENOVA, ZERO ABBONAMENTI.`. Cambialo in `GENOVA, LABORATORIO IA.`. Salva e ricarica il gioco: la scritta piccola in basso cambia. Hai appena verificato che stai modificando il file giusto! Puoi annullare la modifica nell’editor e salvare di nuovo.
-
-Questo è un esercizio di riscaldamento, non la soluzione di un bug.
+Per aprire un `.js` usa l’editor o **Apri con**. Non cambiare i nomi dei file: `game.js.txt` non è la stessa cosa di `game.js`.

@@ -1,57 +1,31 @@
-# Trova e verifica un bug
+# Hai trovato un bug?
 
-[Torna alla pagina iniziale](../README.md)
+[Torna al gioco](../README.md)
 
-## Prima osserva, poi interpreta
+La cosa più utile è riuscire a farlo succedere di nuovo. Ricorda dove eri, quali tasti hai premuto e cosa ti aspettavi. Poi prova a raccontarlo così:
 
-Un’osservazione è “dopo questi tasti, il personaggio ha perso una vita”. Un’ipotesi è “forse la zona di collisione è troppo grande”. La seconda frase non diventa vera perché la pronuncia un’IA.
+> Nella sezione …, quando faccio …, mi aspetto …, invece succede …
 
-1. Parti da una nuova partita e ripeti il problema.
-2. Scrivi i tasti nell’ordine esatto e indica la sezione.
-3. Conta quante volte succede su tre tentativi.
-4. Confronta cosa vedi con quello che ti aspettavi.
-5. Compila [la scheda](../SCHEDA-BUG.md). Uno screenshot aiuta, ma non sostituisce le istruzioni.
+Puoi dirlo a un amico o incollarlo in ChatGPT/OpenCode. Se ti servono, qui ci sono [quattro righe per prendere appunti](../APPUNTI-BUG.md): sono facoltative.
 
-**Esempio inventato, non bug confermato del gioco:** “Premo pausa; mi aspetto che il tempo si fermi, ma continua a salire”. È molto più utile di “la pausa è rotta”.
+## Dove curiosare
 
-## Piccole indagini, senza soluzioni
+- Premi **H**: i rettangoli delle collisioni corrispondono a quello che vedi?
+- Prova a tenere premuto un tasto, rilasciarlo o mettere in pausa durante un movimento.
+- Vai al boss con **3** e usa **I** per osservare gli attacchi con calma.
+- Guarda come cambiano monete, punti e moltiplicatore quando torni indietro o perdi una vita.
 
-Scegline una, oppure usa il problema indicato dal docente. Sono domande da verificare: non promettono che troverai un errore.
+Sono spunti, non una lista di errori già accertati. Potresti anche trovare qualcosa che funziona ma che vorresti diverso: puoi cambiarlo lo stesso.
 
-| Indagine | Una prova da fare | Che cosa annotare |
-| --- | --- | --- |
-| Quello che vedo corrisponde alle collisioni? | Attiva H e confronta personaggi, oggetti e rettangoli durante il movimento. | Quale parte tocca? È decorativa oppure dovrebbe contare? |
-| I comandi rispondono come mi aspetto? | Prova pressione breve, tasto tenuto, pausa e ritorno alla finestra. | Ordine dei tasti e comportamento dopo la pausa. |
-| Il boss avvisa abbastanza chiaramente? | Vai alla sezione 3, osserva entrambi gli attacchi; usa I per studiarli. | Dove si vede il pericolo e dove arriva il colpo. |
-| Il punteggio ha senso? | Prendi un oggetto, torna indietro, supera un nemico, perdi una vita. | Valori prima e dopo; spiegazione alternativa. |
-| Il gioco è comprensibile a un compagno? | Fallo provare senza spiegare i comandi a voce. | Dove si blocca e quale testo potrebbe aiutarlo. |
-
-Un problema di chiarezza può essere importante anche se il programma non “si rompe”. Distingui **bug**, **scelta di gioco** e **miglioramento desiderato**. Se non trovi un difetto, consegna una prova ben fatta con risultato “non riprodotto”. Non inventarlo.
-
-## Chiedi un aiuto piccolo all’IA
+## Un messaggio utile per l’IA
 
 ```text
-Sto indagando un solo comportamento di questo gioco.
-Passi: [scrivi qui]. Atteso: [scrivi qui]. Osservato: [scrivi qui].
-Non correggere ancora il codice. Fammi una domanda utile e proponi
-una prova che distingua due possibili spiegazioni.
-Spiega le parole tecniche. Se mancano dati, dillo.
+Nel gioco succede questo: [descrivi cosa fai e cosa vedi].
+Mi aspettavo invece: [descrivi il risultato].
+Aiutami a capire perché. Guarda il codice e proponimi una piccola
+modifica, spiegando cosa cambia e come posso provarla.
 ```
 
-Non incollare il testo con le parentesi ancora vuote: sostituiscile con i tuoi dati.
+Fai una copia prima di cambiare qualcosa. Dopo la modifica, rifai la stessa prova e gioca ancora un po’. Se non migliora, racconta all’IA il risultato: non occorre accettare la sua prima spiegazione.
 
-## Correggi, poi cerca di smentirti
-
-Conserva una copia prima della modifica. Scegli una sola ipotesi, una sola modifica e un modo per tornare indietro. Dopo la modifica:
-
-- rifai **esattamente** la prova che falliva;
-- ripetila tre volte;
-- prova anche una situazione vicina, ma diversa;
-- prova un pezzo del gioco che funzionava già;
-- se usi i test automatici, annota il risultato senza cancellare quelli scomodi.
-
-Se non cambia nulla, l’ipotesi può essere sbagliata. Non accumulare altre cinque modifiche: riparti dalla copia precedente o chiedi aiuto su quella prova.
-
-## La domanda finale sull’IA
-
-“Che cosa so perché l’ho osservato, e che cosa credo soltanto perché l’IA l’ha detto?” Scrivi un esempio concreto nella scheda.
+Il progetto ha anche test automatici. Possono passare tutti e lasciare sfuggire un bug: controllano soltanto le situazioni per cui sono stati scritti.
