@@ -1,0 +1,35 @@
+name: Ho trovato un comportamento strano
+description: Descrivi una prova ripetibile, anche senza conoscere il codice.
+title: "[Indagine] "
+body:
+  - type: markdown
+    attributes:
+      value: "Questa segnalazione sarà pubblica. Usa un codice gruppo, non nomi, dati personali o chiavi."
+  - type: textarea
+    id: steps
+    attributes:
+      label: Cosa devo fare per vederlo?
+      description: "Parti da una nuova partita. Indica sezione, tasti e uso di DEBUG."
+      placeholder: "1. Apro il gioco…
+2. Premo…
+3. Succede…"
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Che cosa ti aspettavi?
+    validations:
+      required: true
+  - type: textarea
+    id: observed
+    attributes:
+      label: Che cosa hai osservato?
+      description: "Quante volte su tre prove? Computer/browser se li conosci."
+    validations:
+      required: true
+  - type: textarea
+    id: attempts
+    attributes:
+      label: Cosa hai già provato, con o senza IA?
+      description: "Scrivi anche cosa non hai potuto verificare."

@@ -1,0 +1,14 @@
+name: Prove del gioco
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  logica:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Esegui le prove senza installare pacchetti
+        run: node test.mjs

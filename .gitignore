@@ -1,0 +1,13 @@
+# Credenziali e file personali non appartengono al laboratorio
+.env
+.env.*
+*.pem
+*.key
+auth.json
+credentials.json
+# File creati dagli strumenti
+.DS_Store
+Thumbs.db
+node_modules/
+qa/test-report.json
+*.log

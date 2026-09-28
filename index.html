@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#153d45">
+  <meta name="description" content="Un platform originale nei caruggi di Genova. Programma, salta e risparmia: nessun abbonamento richiesto.">
+  <title>Le avventure di Braccia Corte</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main aria-labelledby="game-title">
+    <h1 id="game-title" class="sr-only">Le avventure di Braccia Corte</h1>
+    <div class="stage">
+      <canvas id="game" width="960" height="540" tabindex="0" role="img" aria-label="Le avventure di Braccia Corte: un platform 2D ambientato a Genova" aria-describedby="instructions">
+        Il gioco richiede un browser con Canvas 2D e JavaScript. Apri index.html in un browser moderno: funziona anche senza connessione.
+      </canvas>
+      <p id="error" hidden role="alert"></p>
+    </div>
+    <footer class="toolbar" aria-label="Opzioni di gioco">
+      <span class="toolbar-caption">GENOVA, ZERO ABBONAMENTI.</span>
+      <div class="toolbar-actions">
+        <button id="pause" type="button" title="Pausa o riprendi · Esc" aria-label="Pausa, tasto Escape">Pausa <kbd>Esc</kbd></button>
+        <button id="audio" type="button" title="Attiva o disattiva gli effetti sonori · M" aria-pressed="false">Audio pronto <kbd>M</kbd></button>
+        <button id="fullscreen" type="button" title="Schermo intero · F">Schermo intero <kbd>F</kbd></button>
+      </div>
+    </footer>
+    <p id="instructions" class="sr-only">Invio, Spazio o clic per iniziare. Frecce o A e D per muoversi; Spazio, W o Freccia su per saltare: tieni premuto per saltare più in alto. Shift per correre, E per lo Scatto Tirchio. Escape mette in pausa, M controlla l'audio, F apre lo schermo intero. Modalità dimostrazione: H mostra le collisioni, I attiva l'invincibilità; 1, 2 e 3 portano alle tre sezioni. Puoi usare il gioco con la tastiera.</p>
+    <p id="status" class="sr-only" role="status" aria-live="polite" aria-atomic="true">Schermata iniziale. Premi Invio per giocare.</p>
+  </main>
+  <noscript><p class="noscript">Attiva JavaScript nel browser per giocare. Tutto il gioco è salvato in questa cartella, anche i suoni.</p></noscript>
+  <script src="level.js"></script>
+  <script src="game.js"></script>
+  <script src="render.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
