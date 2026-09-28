@@ -4,15 +4,18 @@
 
 **OpenCode** è un’app che può leggere e modificare la cartella del gioco. **Zen** è uno dei servizi che le forniscono i modelli IA. Non serve usare anche ChatGPT.
 
-## Per partire
+## Per partire: scegli Muse Spark 1.3 Free
 
-1. Scarica l’app **Desktop** dal [sito ufficiale di OpenCode](https://opencode.ai/download), scegliendo la versione per il tuo computer.
-2. Apri nell’app la tua **copia della cartella del gioco**, quella con `index.html`. Non lo ZIP.
-3. Collega un servizio IA. Se scegli **OpenCode Zen**, segui la connessione al provider nell’app e scegli un modello.
+1. Scarica l’app **Desktop** dal [sito ufficiale di OpenCode](https://opencode.ai/download) e aprila.
+2. Apri la tua **copia della cartella del gioco**, quella con `index.html`. Non lo ZIP.
+3. Apri il selettore del modello vicino alla casella dove scrivi. Cerca **Muse Spark 1.3 Contributor Free** sotto **OpenCode Zen** e selezionalo. È il nome completo della variante gratuita da usare qui.
+4. Controlla il nome del modello prima di inviare il primo messaggio. Il file `opencode.json` del progetto lo indica già come predefinito; se l’app mantiene una tua scelta precedente, selezionalo a mano.
 
-Zen può richiedere credito a pagamento: avere ChatGPT non significa avere credito Zen. Controlla i costi prima di attivarlo; non devi comprare nulla per giocare o usare l’altro percorso. Se sei minorenne, fatti aiutare da un adulto per account e acquisti.
+**Non scegliere semplicemente “Muse Spark 1.3” senza “Free”**: è un’altra voce. Se non trovi la variante gratuita, controlla di avere l’app aggiornata e consulta il [catalogo Zen](https://opencode.ai/docs/zen/). Se ti viene chiesto di acquistare credito, fermati: queste istruzioni non richiedono di passare a un modello a pagamento. Disponibilità e limiti dell’offerta possono cambiare.
 
-La **chiave API** è una credenziale per il servizio: inseriscila soltanto nel campo di connessione, non nella chat, nei file o su GitHub.
+La variante **Contributor** consente l’uso di prompt e risposte per addestrare futuri modelli Meta: usala con i file del gioco, senza dati personali o segreti. [Dettagli ufficiali](https://opencode.ai/docs/zen/#privacy).
+
+Se l’app richiede una connessione a Zen, segui la procedura del provider. Un’eventuale **chiave API** va soltanto nel campo di connessione, mai nella chat o nei file del gioco.
 
 ## Cosa scrivergli
 
@@ -38,7 +41,7 @@ Dopo aver installato la CLI seguendo le [istruzioni ufficiali](https://opencode.
 - **Windows:** in Esplora file, tasto destro sullo spazio vuoto → **Apri nel terminale**, se disponibile.
 - **Mac:** apri Terminale, scrivi `cd ` con lo spazio, trascina la cartella nella finestra e premi Invio.
 
-Scrivi `opencode` e premi Invio. **Dentro OpenCode**, `/connect` collega Zen e `/models` sceglie il modello; **Tab** passa fra Plan e Build. I pulsanti della versione Desktop possono avere nomi diversi.
+Scrivi `opencode` e premi Invio. **Dentro OpenCode**, `/connect` collega Zen quando necessario e `/models` apre la scelta: cerca **Muse Spark 1.3 Contributor Free**; **Tab** passa fra Plan e Build. I pulsanti della versione Desktop possono avere nomi diversi.
 
 Esiste anche `/undo`, ma il ripristino dei file richiede Git: una cartella estratta dallo ZIP non lo include. La copia manuale funziona comunque.
 

@@ -25,25 +25,52 @@ Tieni i file insieme nella cartella. Il gioco funziona anche offline.
 
 Per esplorare più comodamente: **1/2/3** ti portano alle tre sezioni, **I** ti rende invincibile, **H** mostra i rettangoli usati per le collisioni. Compare la scritta DEBUG: sono strumenti per fare prove.
 
-## Voglio cambiarlo, ma non so programmare
+## Comincia da qualcosa che non funziona
 
-Va benissimo. Fai una **copia della cartella** e sperimenta su quella: l’originale resta sempre lì.
+Fai una **copia della cartella**: sarà la tua versione da sperimentare. Poi scegli una cosa strana che hai notato giocando. Cercare di capire e sistemare un problema si chiama **debug**.
 
-Un primo tentativo semplice: cambia una scritta. Poi prova qualcosa che ti incuriosisce. Non devi capire tutto il gioco prima di toccarlo.
+1. **Rifallo succedere.** In quale sezione sei? Che tasti premi? Usa 1/2/3 per tornare subito lì e H per vedere le collisioni.
+2. **Descrivilo.** “Quando faccio … mi aspetto …, invece succede …”. È il punto di partenza da dare all’IA.
+3. **Chiedi un intervento piccolo.** Falle leggere i file e chiedile di spiegare la possibile causa, senza riscrivere tutto il gioco.
+4. **Prova davvero.** Dopo la modifica salva, ricarica `index.html` e ripeti gli stessi passi. Funziona? Prova anche un’altra parte del gioco.
 
-- **[Da dove comincio?](guide/00-primi-passi.md)** — aprire un file, cambiare una scritta, vedere il risultato.
-- **[Mi faccio aiutare da ChatGPT](guide/02-chatgpt.md)** — per capire il codice e farsi suggerire una modifica.
-- **[Uso OpenCode + Zen](guide/03-opencode-zen.md)** — per lavorare direttamente sulla cartella del gioco.
-- **[Ho trovato qualcosa che non va](guide/01-indagine.md)** — qualche idea per capire un bug.
+Se non cambia niente, racconta all’IA quello che hai visto. Se peggiora, torna alla copia buona. Non significa che non sei capace: è così che si capisce cosa sta succedendo.
 
-ChatGPT e OpenCode sono due possibilità: non servono entrambi, e puoi anche fare tutto senza IA. Il gioco è offline; per usare questi servizi serve Internet.
+**[Qui trovi un esempio e i passaggi di debug più nel dettaglio](guide/01-indagine.md)**, compreso cosa fare se il gioco diventa bianco.
 
-## Un consiglio sull’IA
+## E poi fallo diventare tuo
 
-È utilissima per partire, ma può sbagliare con grande sicurezza. Chiedile una modifica piccola, provala nel gioco e raccontale cosa succede davvero. “Ho risolto” scritto in chat non basta: il bello è vedere se funziona.
+Non fermarti ai bug. Quale versione di Braccia Corte vorresti giocare?
+
+| Per partire | Per spingerti un po’ oltre |
+| --- | --- |
+| Cambia una battuta o i colori | Aggiungi un percorso alternativo sui tetti |
+| Sposta qualche moneta | Crea un oggetto da raccogliere con un effetto nuovo |
+| Rendi un salto più comodo | Inventa un nemico o un attacco del boss |
+| Migliora un suggerimento poco chiaro | Aggiungi comandi touch per giocare sul telefono |
+
+Scegli **una sola idea per cominciare**. Puoi scrivere all’IA:
+
+```text
+Vorrei aggiungere [la mia idea] a questo gioco.
+Leggi i file e proponimi una prima versione semplice.
+Poi aiutami a realizzarla, spiegandomi cosa cambia e come provarla.
+Deve continuare a funzionare aprendo index.html, anche offline.
+```
+
+[Prima modifica, da zero](guide/00-primi-passi.md) · [Come è fatto il gioco](guide/TECNICA.md) · [Qualcosa si è bloccato?](guide/05-aiuto.md)
 
 ## Se ti va di condividere
 
-Puoi passare la tua versione a un amico o proporre una modifica qui su GitHub. [Ecco come](guide/04-condividi.md). Anche segnalare un bug è utile.
+Passa la tua versione a un amico o [proponi una modifica qui su GitHub](guide/04-condividi.md). Anche segnalare un bug è utile. Mi piacerebbe vedere cosa ne fate!
 
-[Qualcosa si è bloccato?](guide/05-aiuto.md) · [Come è fatto il gioco](guide/TECNICA.md) · [Link agli strumenti](guide/FONTI.md)
+## Ora prova gli strumenti
+
+Scarica **[OpenCode](https://opencode.ai/download)** e **[ChatGPT / Codex](https://learn.chatgpt.com/docs/app)** e apri la tua copia del gioco. Puoi provarne uno alla volta: entrambi possono aiutarti a lavorare sui file.
+
+- **OpenCode:** usa **Muse Spark 1.3 Contributor Free**, la variante gratuita di Muse Spark 1.3. Il progetto è già impostato su questo modello; [qui trovi i passaggi per selezionarlo](guide/03-opencode-zen.md).
+- **ChatGPT Codex:** accedi con il tuo account ChatGPT, apri la cartella e parti da una richiesta piccola. [Guida al primo tentativo](guide/06-codex.md). Disponibilità e limiti dipendono dal tuo account.
+
+Vuoi prima parlarne in una normale chat? Puoi anche usare [ChatGPT dal browser](guide/02-chatgpt.md). Per questi strumenti serve Internet; il gioco resta offline.
+
+Il primo messaggio può essere semplicemente: **“Questo è il mio gioco. Aiutami a capire e migliorare questa cosa…”**
